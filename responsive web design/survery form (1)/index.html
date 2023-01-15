@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="infoContainer">
+        <h1 id="title">Secret Club Application</h1>
+        <p id="description">Particpate in this survey to apply to our totally secret club</p>
+    </div>
+    <div class="formContainer">
+        <form id="survey-form">
+            <fieldset class="contact">
+                <label for="name" id="name-label">Your name:<input type="text" id="name" placeholder="noobmaster69"
+                        required></label>
+                <label for="email" id="email-label">Your email:<input type="email" id="email"
+                        placeholder="johnDoe@missing.com" required></label>
+                <!-- Dosent has to be a number input type -->
+                <label for="number" id="number-label">Your favorite number (0-9):<input type="number" id="number"
+                        placeholder="6" min="0" max="9"></label>
+            </fieldset>
+            <fieldset class="dropdownC">
+                <label for="dropdown" id="dropdown-label">Select who invited you <br>
+                    <select id="dropdown">
+                        <label for="">
+                            <option id="">Walter White</option>
+                        </label>
+                        <label for="">
+                            <option id="">Jesse Pinkman</option>
+                        </label>
+                        <label for="">
+                            <option id="">Saul Goodman</option>
+                        </label>
+                        <label for="">
+                            <option id="">Gus Fring</option>
+                        </label>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="radioField">
+                <label class="question">Which Desert will you want?</label>
+                <label for=""><input type="radio" name="Radios" id="" value="ice cream"> ice cream</label>
+                <label for=""><input type="radio" name="Radios" id="" value="choclate brownie"> Choclate brownie</label>
+                <label for=""><input type="radio" name="Radios" id="" value="jelly"> Jelly</label>
+                <label for=""><input type="radio" name="Radios" id="" value="cake"> Cake</label>
+            </fieldset>
+            <fieldset class="radioField">
+                <label class="question">What toppings do you want in your sandwich?</label>
+                <label for="cheese"><input type="checkbox" name="" id="cheese" value="cheese"> cheese</label>
+                <label for="tomato"><input type="checkbox" name="" id="tomato" value="tomato"> tomato</label>
+                <label for="ham"><input type="checkbox" name="" id="ham" value="ham"> ham</label>
+                <label for="pineappple"><input type="checkbox" name="" id="pineapple" value="pineapple">
+                    pineapple</label>
+                <label for="cucumber"><input type="checkbox" name="" id="cucumber" value="cucumber"> cucumber</label>
+                <label for="melon"><input type="checkbox" name="" id="melon" value="melon"> melon</label>
+            </fieldset>
+            <fieldset>
+                <label class="question1">Any other infomation that we will need to know?</label>
+                <textarea placeholder="Type here"></textarea>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

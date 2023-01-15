@@ -1,0 +1,139 @@
+:root {
+	--font: "poppins", sans-serif;
+	--mainCol: #efefef;
+	--secondCol: #c9c9c9;
+	--thirdCol: #313131;
+}
+body {
+	background-color: #1f1f1f;
+	color: var(--mainCol);
+	font-family: var(--font);
+	margin: 0;
+}
+.infoContainer {
+	width: 100%;
+	text-align: center;
+}
+#description {
+	color: var(--secondCol);
+}
+.formContainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+form {
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+fieldset {
+	border: 2px var(--thirdCol) solid;
+	border-radius: 0.5rem;
+	width: 95%;
+	margin-bottom: 1em;
+}
+input,
+select {
+	margin-top: 0.5rem;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+	width: 90%;
+	margin-left: 0.5rem;
+	border: 2px var(--thirdCol) solid;
+	border-radius: 2rem;
+	font-size: 1rem;
+	padding-inline: 1rem;
+	padding-block: 0.5em;
+	background-color: transparent;
+	color: var(--mainCol);
+}
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="number"]:invalid {
+	border-color: salmon;
+}
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label {
+	width: 90%;
+	margin-bottom: 1rem;
+}
+
+#dropdown {
+	appearance: none;
+	width: 81%;
+	margin-left: 0.5rem;
+	border: 2px var(--thirdCol) solid;
+	border-radius: 2rem;
+	font-size: 1rem;
+	padding-inline: 1rem;
+	padding-block: 0.5em;
+	background-color: #1f1f1f;
+	color: var(--secondCol);
+	transition: 0.5s;
+}
+.dropdownC::after {
+	content: "\25BC";
+	margin-right: 0.1em;
+	color: var(--secondCol);
+	position: relative;
+	top: 0;
+	right: 2em;
+}
+#dropdown:hover {
+	cursor: pointer;
+	background-color: var(--thirdCol);
+	transition: 0.56s;
+	border-color: #404040;
+}
+.radioField {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+input[type="radio"] {
+	display: "block";
+}
+.question {
+	margin-bottom: 0.5rem;
+}
+textarea {
+	margin-top: 0.75rem;
+	width: 99%;
+	background-color: #1f1f1f;
+	border: #313131 solid 2px;
+	border-radius: 1em;
+	color: #c9c9c9;
+	font-family: var(--font);
+	padding: 0.5rem;
+}
+button[type="submit"] {
+	width: 96%;
+	font-family: var(--font);
+	background-color: #1f1f1f;
+	border: #313131 solid 2px;
+	border-radius: 2rem;
+	color: #efefef;
+	font-size: x-large;
+	font-weight: 600;
+	padding-block: 0.25rem;
+	margin-bottom: 1rem;
+	transition: 0.5s;
+}
+button[type="submit"]:hover {
+	border-color: rgb(3, 164, 111);
+	transition: 0.5s;
+	cursor: pointer;
+}
