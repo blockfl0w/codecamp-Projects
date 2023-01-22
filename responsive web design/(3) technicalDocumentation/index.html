@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="logo">JavaScript Tutorial</header>
+        <div class="links">
+            <a href="#Javascript_introduction" class="nav-link">JavaScript introduction</a>
+            <a href="#Hello_World" class="nav-link">Hello World</a>
+            <a href="#Your_first_variable" class="nav-link">Your first variable</a>
+            <a href="#Data_types" class="nav-link">Data types</a>
+            <a href="#Variable_types" class="nav-link">Variable types</a>
+            <a href="#Manipulating_variables" class="nav-link">Manipulating variables</a>
+            <a href="#If/else" class="nav-link">If/else</a>
+            <a href="#Functions" class="nav-link">Functions</a>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Javascript_introduction">
+            <header>Javascript introduction</header>
+            <p>JavaScript is a programming language used to create interactive and responsive websites, and can also be
+                used for server-side programming and desktop app development. It's a versatile, high-level language that
+                is widely used on the web.</p>
+            <p>Now that you know what Javascript is usually used for lets start writing code.</p>
+            <p>You have two options to start writing Javascript you can download a IDE and run it localy (dont worry its
+                easier than it sounds) or you can use a web based IDE</p>
+            <div class="buttonContainer">
+                <a class="button" href="https://code.visualstudio.com/Download" target="_blank">Download VScode
+                    (local)</a>
+                <a class="button" href="https://www.programiz.com/javascript/online-compiler/" target="_blank">Web
+                    version</a>
+            </div>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <p>Now you know why people use JavaScript and have a place to run your code we can finaly start coding!</p>
+            <p>To start copy this code into your IDE and hit run</p>
+            <code>console.log("Hello World!");</code>
+            <p>You should now see "Hello World!" in your console!</p>
+            <p>This is how we output messages on the console in javascript!</p>
+        </section>
+        <section class="main-section" id="Your_first_variable">
+            <header>Your first variable</header>
+            <p>Variables are very important in the world of coding they let us store values and manipulate these values
+                easily lets create a variable!</p>
+            <p>remove the <span class="code">console.log</span> and replace it with this</p>
+            <code>let message = "Hello world";</code>
+            <p>Well done you just declared your first javascript variable</p>
+            <p>when you hit run you will notice nothing happens this is because we arent outputing anything to the <span
+                    class="coe">console</span> to fix this add this underneath your code.</p>
+            <code>console.log(message);</code>
+            <p>When you hit run now you should see your message in the console!</p>
+        </section>
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <p>There are 7 data types</p>
+            <ul>
+                <li>boolean <code>const x = true;</code></li>
+                <li>null <code>const x = null;</code></li>
+                <li>undefined <code>const x = undefined;</code></li>
+                <li>number <code>const x = 12</code></li>
+                <li>string <code>const x = "john doe"</code></li>
+                <li>object <code>const x = {
+                                name: "peter"
+                            }</code></li>
+            </ul>
+        </section>
+        <section class="main-section" id="Variable_types">
+            <header>Variable types</header>
+            <p>There asre multiple variable types in javascript that all have uniuqe uses</p>
+            <p>The const variable is used to declare a variable that cant be changed</p>
+            <code>
+                const x = 5;<br><br>
+
+                x = 8;<br><br>
+                
+                //This will result in a error
+            </code>
+            <p>The let variable is used to declare variables that can be changed</p>
+            <code>
+                const x = 5;<br><br>
+
+                x = 8;<br><br>
+                
+                //This will return 8
+            </code>
+            <p>There is a also var variables this was used before const and let were introduced but are only used today
+                for scoping problems they function like let variables</p>
+            <code>
+                var x = 5;<br><br>
+
+                x = 8;<br><br>
+                
+                //This will return 8
+            </code>
+        </section>
+        <section class="main-section" id="Manipulating_variables">
+            <header>Manipulating variables</header>
+            <p>Variables can be manipulated to get new values</p>
+            <p>For example variables can be added</p>
+            <code>
+                let x = 6;<br>
+                x = 7 + 8;<br>
+                console.log(x)<br>
+                //15
+            </code>
+            <p>You can also subtract, multiply (*) and divide (/) there are alot more but these are the basic ones!</p>
+        </section>
+        <section class="main-section" id="If/else">
+            <header>If/else</header>
+            <p>In JavaScript you can also compare values and run code depending on these values</p>
+            <p>For example this code logs x when its more than 10</p>
+            <code>
+                let x = 12;<br><br>
+                if(x > 10){<br>
+                      console.log(x);<br>
+                };<br><br>
+                //result:12
+            </code>
+            <p>you can use if else statements to add more conditions</p>
+            <code>
+                let x = 12;<br><br>
+                if(x < 10){<br>
+                      console.log(x);<br>
+                }<br><br>
+                if else(x < 15){<br>
+                      cosnole.log(x + 5);<br>
+                }<br>
+                //result: 17
+            </code>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions let us reuse code without having to write it again</p>
+            <code>
+            function count(value){<br>
+                  let x = value;<br>
+                  for (let i = 0; i < 5; i++){<br>
+                        x+= 1;<br>
+                        console.log(x);<br>
+                  }<br>
+            }<br><br>
+            //Result: if value = 0: 1,2,3,4,5
+            </code>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+:root {
+	--fontA: "Unbounded", sans-serif;
+	--fontB: "Monsterrat", sans-serif;
+	--fontColPlain: rgb(196, 196, 196);
+	--fontColStrong: rgb(222, 222, 222);
+	--bg: #111;
+	--lightBg: rgb(31, 31, 31);
+	--rllyLightBg: rgb(71, 71, 71);
+	--accent: #06bcee;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	background-color: var(--bg);
+	color: var(--fontColPlain);
+}
+p,
+a {
+	font-family: var(--fontB);
+}
+header {
+	font-family: var(--fontA);
+	color: var(--fontColStrong);
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+code {
+	background-color: var(--lightBg);
+	padding: 1rem;
+	font-size: 1rem;
+	margin: 1rem;
+	border-radius: 6px;
+	display: block;
+}
+.button {
+	border: var(--accent) solid 1px;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	color: var(--fontColPlain);
+	font-weight: 600;
+	border-radius: 0.25rem;
+	/* transition: 0.5s; */
+	margin-top: 2rem;
+	margin-right: 1rem;
+	text-decoration: none;
+}
+.button:hover {
+	cursor: pointer;
+	background-color: var(--accent);
+	color: #111;
+	/* transition: 0.5s; */
+}
+li {
+	font-family: var(--fontB);
+}
+.indent {
+	text-indent: 4rem;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	background-color: var(--bg);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-bottom: 1rem;
+}
+nav > header {
+	margin-bottom: 1rem;
+}
+.nav-link {
+	color: var(--fontColWeak);
+	text-decoration: none;
+	margin-right: 1rem;
+}
+.nav-link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+@media only screen and (min-width: 1200px) {
+	nav {
+		position: sticky;
+		top: 0;
+		background-color: var(--lightBg);
+		width: 25%;
+		height: 100vh;
+		justify-content: flex-start;
+	}
+	#main-doc {
+		display: flex;
+		flex-direction: column;
+		width: 75%;
+		padding: 1rem;
+	}
+	body {
+		display: flex;
+	}
+	.links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 95%;
+		padding: 0;
+	}
+	.nav-link {
+		font-size: 1.25rem;
+		padding-block: 1rem;
+		width: 100%;
+		border-bottom: var(--rllyLightBg) 2px solid;
+		margin: 0;
+		padding-left: 1rem;
+	}
+}
